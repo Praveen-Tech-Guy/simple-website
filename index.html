@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        p{
+            font-family: arial;
+            font-size: 14px;
+        }
+        .video-profile{
+            width: 60px;
+            height: 50px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .video-description1{
+            display: flex;
+            flex-direction: row;
+        }
+        .video-discription{
+            width: 200px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .header{
+            display: flex;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: 50px;
+            background-color: white;
+            justify-content: space-between;
+            padding: 10px 10px 5px 10px;
+            flex-shrink: 0;
+            border-bottom: 2px solid rgb(206, 206, 206);
+            z-index: 1;
+        }
+        .right{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 150px;
+            justify-content: space-between;
+            flex-shrink: 0;
+        }
+        .middle{
+            display: flex;
+            flex: 1;
+           align-items: center;
+            justify-content: center;
+        }
+        .search-bar::placeholder{
+            padding: 20px;
+        }
+        .search-bar{
+            flex: 1;
+        }
+        .left{
+            display: flex;
+            gap: 8px;
+          align-content: center;
+          margin-left: 10px;
+          flex-shrink: 0;
+        }
+        .navigator{
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            left: 0;
+            top: 65px;
+            bottom: 0px;
+            width: 79px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            padding: 0px;
+             border: 2px solid rgb(223, 222, 222);
+             border-top: 0px;
+        }
+        .navbar{
+            height: 60px;
+            width: 60px;
+            border-radius: 8px;
+        }
+        body{
+            padding: 100px;
+            padding-right: 20px;
+        }
+        .icons{
+            height:100%;
+            width: 65px;
+            align-content: center;
+            background-color: rgb(255, 255, 255);
+            padding-left: 10px;
+            padding-right: 4px;
+            transition: 0.2s;
+            filter: drop-shadow(2px 2px 2px);
+            position: relative;
+        }
+        .abc{
+            position: absolute;
+            font-size: 10px;
+            background-color: red;
+            padding: 4px;
+            border-radius:50% ;
+            bottom: 80px;
+            right: 7px;
+        }
+        .icons:hover{
+            background-color: rgb(225, 224, 224);
+            font-weight:bold;
+        }
+             .grids{
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr 1fr ;
+            gap: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="right">
+            <div >
+                <img style="height: 50px;width: 50px;border-radius: 25px;" src="IMG_20250701_193349_496.jpg" alt="">
+            </div>
+          <div style="margin-right: 20px;"><img style="height: 40px;width: 70px;" src="google_logo.svg" alt=""></div>
+        </div>
+         <div class="middle">
+                <input class="search-bar" style="height: 40px;width:0px;border:1.5px solid rgb(215, 215, 215);border-radius: 4px;box-shadow: 1px 1px 4px inset rgb(214, 214, 214);" type="search" placeholder="Search">
+         </div>
+          <div class="left">
+            <div> <img style="height: 40px;width: 60px;border-radius: 4px;" src="IMG_20250701_193349_496.jpg" alt=""></div>
+            <div> <img style="height: 40px;width: 60px;border-radius: 4px;" src="IMG_20250701_193329_873.jpg" alt=""></div>
+          </div>
+    </div>
+
+
+    <div class="navigator">
+        <div class="icons">
+            <img class="navbar" src="IMG_20250701_193329_873.jpg" alt="">
+           <p style="margin: 0px;margin-left: 11px;font-size: 12px;">Home</p>
+        </div>
+         <div class="icons">
+            <img class="navbar" src="IMG_20250701_193349_496.jpg" alt="">
+            <p style="margin: 0px;margin-left: 6px;font-size: 12px;">subscribe</p>
+
+<div class="abc">23</div>
+
+
+         </div>
+          <div class="icons">
+             <img class="navbar" src="IMG_20250701_193329_873.jpg" alt="">
+             <p style="margin:0px;font-size: 12px;margin-left: 12px;"> videos</p>
+          </div>
+           <div class="icons">
+              <img class="navbar" src="IMG_20250701_193349_496.jpg" alt="">
+              <p style="margin: 0px;margin-left: 3px;font-size: 12px;">downloads</p>
+           </div>
+            <div class="icons">
+                 <img class="navbar" src="IMG_20250701_193329_873.jpg" alt="">
+                 <p style="margin: 0px;margin-left: 11px;font-size: 12px;">shorts</p>
+            </div>
+             <div class="icons">
+              <img class="navbar" src="IMG_20250701_193349_496.jpg" alt="">
+              <p style="margin: 0px;margin-left: 18px;font-size: 12px;">you</p>
+           </div>
+    </div>
+
+
+
+
+<div class="grids">
+ <div class="video">
+        <div class="video-image">
+            <img style="width:300px;" src="IMG_20250701_193329_873.jpg" alt="">
+        </div>
+        <div class="description1">
+            <div class="video-profile">
+                <img style="width: 40px;height: 40px;border-radius: 50%;margin-left: 5px;" src="IMG_20250701_193349_496.jpg" alt="">
+            </div>
+            <div class="video-discription">
+                <div>
+                    <p style="margin-bottom: 0px;margin-top: 4px;"><b>talk with great bussinessman the Elon Musk..</b></p>
+                </div>
+                <div>
+                    <p style="font-size:10px;color: rgb(192, 192, 192);margin-top: 5px;margin-bottom: 0px;">Praveen Pachange</p>
+                </div>
+                <div>
+                    <p style="font-size: 10px;color: rgb(192, 192, 192);margin-top: 4px;"> 40M views <b>.</b> 4 months ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="video">
+        <div class="video-image">
+            <img style="width:300px;height: 212.5px;" src="IMG_20250701_193349_496.jpg" alt="">
+        </div>
+        <div class="description1">
+            <div class="video-profile">
+                <img style="width: 40px;height: 40px;border-radius: 50%;margin-left: 5px;" src="IMG_20250701_193329_873.jpg" alt="">
+            </div>
+            <div class="video-discription">
+                <div>
+                    <p style="margin-bottom: 0px;margin-top: 4px;"><b>talk with great bussinessman the Elon Musk..</b></p>
+                </div>
+                <div>
+                    <p style="font-size:10px;color: rgb(192, 192, 192);margin-top: 5px;margin-bottom: 0px;">Praveen Pachange</p>
+                </div>
+                <div>
+                    <p style="font-size: 10px;color: rgb(192, 192, 192);margin-top: 4px;"> 40M views <b>.</b> 4 months ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="video">
+        <div class="video-image">
+            <img style="width:300px;" src="IMG_20250701_193329_873.jpg" alt="">
+        </div>
+        <div class="description1">
+            <div class="video-profile">
+                <img style="width: 40px;height: 40px;border-radius: 50%;margin-left: 5px;" src="IMG_20250701_193349_496.jpg" alt="">
+            </div>
+            <div class="video-discription">
+                <div>
+                    <p style="margin-bottom: 0px;margin-top: 4px;"><b>talk with great bussinessman the Elon Musk..</b></p>
+                </div>
+                <div>
+                    <p style="font-size:10px;color: rgb(192, 192, 192);margin-top: 5px;margin-bottom: 0px;">Praveen Pachange</p>
+                </div>
+                <div>
+                    <p style="font-size: 10px;color: rgb(192, 192, 192);margin-top: 4px;"> 40M views <b>.</b> 4 months ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+         <div class="video">
+        <div class="video-image">
+            <img style="width:300px;height: 212.5px;" src="IMG_20250701_193349_496.jpg" alt="">
+        </div>
+        <div class="description1">
+            <div class="video-profile">
+                <img style="width: 40px;height: 40px;border-radius: 50%;margin-left: 5px;" src="IMG_20250701_193329_873.jpg" alt="">
+            </div>
+            <div class="video-discription">
+                <div>
+                    <p style="margin-bottom: 0px;margin-top: 4px;"><b>talk with great bussinessman the Elon Musk..</b></p>
+                </div>
+                <div>
+                    <p style="font-size:10px;color: rgb(192, 192, 192);margin-top: 5px;margin-bottom: 0px;">Praveen Pachange</p>
+                </div>
+                <div>
+                    <p style="font-size: 10px;color: rgb(192, 192, 192);margin-top: 4px;"> 40M views <b>.</b> 4 months ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+       <div class="video">
+        <div class="video-image">
+            <img style="width:300px;" src="IMG_20250701_193329_873.jpg" alt="">
+        </div>
+        <div class="description1">
+            <div class="video-profile">
+                <img style="width: 40px;height: 40px;border-radius: 50%;margin-left: 5px;" src="IMG_20250701_193349_496.jpg" alt="">
+            </div>
+            <div class="video-discription">
+                <div>
+                    <p style="margin-bottom: 0px;margin-top: 4px;"><b>talk with great bussinessman the Elon Musk..</b></p>
+                </div>
+                <div>
+                    <p style="font-size:10px;color: rgb(192, 192, 192);margin-top: 5px;margin-bottom: 0px;">Praveen Pachange</p>
+                </div>
+                <div>
+                    <p style="font-size: 10px;color: rgb(192, 192, 192);margin-top: 4px;"> 40M views <b>.</b> 4 months ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+         <div class="video">
+        <div class="video-image">
+            <img style="width:300px;height: 212.5px;" src="IMG_20250701_193349_496.jpg" alt="">
+        </div>
+        <div class="description1">
+            <div class="video-profile">
+                <img style="width: 40px;height: 40px;border-radius: 50%;margin-left: 5px;" src="IMG_20250701_193329_873.jpg" alt="">
+            </div>
+            <div class="video-discription">
+                <div>
+                    <p style="margin-bottom: 0px;margin-top: 4px;"><b>talk with great bussinessman the Elon Musk..</b></p>
+                </div>
+                <div>
+                    <p style="font-size:10px;color: rgb(192, 192, 192);margin-top: 5px;margin-bottom: 0px;">Praveen Pachange</p>
+                </div>
+                <div>
+                    <p style="font-size: 10px;color: rgb(192, 192, 192);margin-top: 4px;"> 40M views <b>.</b> 4 months ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+       <div class="video">
+        <div class="video-image">
+            <img style="width:300px;" src="IMG_20250701_193329_873.jpg" alt="">
+        </div>
+        <div class="description1">
+            <div class="video-profile">
+                <img style="width: 40px;height: 40px;border-radius: 50%;margin-left: 5px;" src="IMG_20250701_193349_496.jpg" alt="">
+            </div>
+            <div class="video-discription">
+                <div>
+                    <p style="margin-bottom: 0px;margin-top: 4px;"><b>talk with great bussinessman the Elon Musk..</b></p>
+                </div>
+                <div>
+                    <p style="font-size:10px;color: rgb(192, 192, 192);margin-top: 5px;margin-bottom: 0px;">Praveen Pachange</p>
+                </div>
+                <div>
+                    <p style="font-size: 10px;color: rgb(192, 192, 192);margin-top: 4px;"> 40M views <b>.</b> 4 months ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="video">
+        <div class="video-image">
+            <img style="width:300px;height: 212.5px;" src="IMG_20250701_193349_496.jpg" alt="">
+        </div>
+        <div class="description1">
+            <div class="video-profile">
+                <img style="width: 40px;height: 40px;border-radius: 50%;margin-left: 5px;" src="IMG_20250701_193329_873.jpg" alt="">
+            </div>
+            <div class="video-discription">
+                <div>
+                    <p style="margin-bottom: 0px;margin-top: 4px;"><b>talk with great bussinessman the Elon Musk..</b></p>
+                </div>
+                <div>
+                    <p style="font-size:10px;color: rgb(192, 192, 192);margin-top: 5px;margin-bottom: 0px;">Praveen Pachange</p>
+                </div>
+                <div>
+                    <p style="font-size: 10px;color: rgb(192, 192, 192);margin-top: 4px;"> 40M views <b>.</b> 4 months ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="video">
+        <div class="video-image">
+            <img style="width:300px;" src="IMG_20250701_193329_873.jpg" alt="">
+        </div>
+        <div class="description1">
+            <div class="video-profile">
+                <img style="width: 40px;height: 40px;border-radius: 50%;margin-left: 5px;" src="IMG_20250701_193349_496.jpg" alt="">
+            </div>
+            <div class="video-discription">
+                <div>
+                    <p style="margin-bottom: 0px;margin-top: 4px;"><b>talk with great bussinessman the Elon Musk..</b></p>
+                </div>
+                <div>
+                    <p style="font-size:10px;color: rgb(192, 192, 192);margin-top: 5px;margin-bottom: 0px;">Praveen Pachange</p>
+                </div>
+                <div>
+                    <p style="font-size: 10px;color: rgb(192, 192, 192);margin-top: 4px;"> 40M views <b>.</b> 4 months ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="video">
+        <div class="video-image">
+            <img style="width:300px;" src="IMG_20250701_193329_873.jpg" alt="">
+        </div>
+        <div class="description1">
+            <div class="video-profile">
+                <img style="width: 40px;height: 40px;border-radius: 50%;margin-left: 5px;" src="IMG_20250701_193349_496.jpg" alt="">
+            </div>
+            <div class="video-discription">
+                <div>
+                    <p style="margin-bottom: 0px;margin-top: 4px;"><b>talk with great bussinessman the Elon Musk..</b></p>
+                </div>
+                <div>
+                    <p style="font-size:10px;color: rgb(192, 192, 192);margin-top: 5px;margin-bottom: 0px;">Praveen Pachange</p>
+                </div>
+                <div>
+                    <p style="font-size: 10px;color: rgb(192, 192, 192);margin-top: 4px;"> 40M views <b>.</b> 4 months ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="video">
+        <div class="video-image">
+            <img style="width:300px;height: 212.5px;" src="IMG_20250701_193349_496.jpg" alt="">
+        </div>
+        <div class="description1">
+            <div class="video-profile">
+                <img style="width: 40px;height: 40px;border-radius: 50%;margin-left: 5px;" src="IMG_20250701_193329_873.jpg" alt="">
+            </div>
+            <div class="video-discription">
+                <div>
+                    <p style="margin-bottom: 0px;margin-top: 4px;"><b>talk with great bussinessman the Elon Musk..</b></p>
+                </div>
+                <div>
+                    <p style="font-size:10px;color: rgb(192, 192, 192);margin-top: 5px;margin-bottom: 0px;">Praveen Pachange</p>
+                </div>
+                <div>
+                    <p style="font-size: 10px;color: rgb(192, 192, 192);margin-top: 4px;"> 40M views <b>.</b> 4 months ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="video">
+        <div class="video-image">
+            <img style="width:300px;" src="IMG_20250701_193329_873.jpg" alt="">
+        </div>
+        <div class="description1">
+            <div class="video-profile">
+                <img style="width: 40px;height: 40px;border-radius: 50%;margin-left: 5px;" src="IMG_20250701_193349_496.jpg" alt="">
+            </div>
+            <div class="video-discription">
+                <div>
+                    <p style="margin-bottom: 0px;margin-top: 4px;"><b>talk with great bussinessman the Elon Musk..</b></p>
+                </div>
+                <div>
+                    <p style="font-size:10px;color: rgb(192, 192, 192);margin-top: 5px;margin-bottom: 0px;">Praveen Pachange</p>
+                </div>
+                <div>
+                    <p style="font-size: 10px;color: rgb(192, 192, 192);margin-top: 4px;"> 40M views <b>.</b> 4 months ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
